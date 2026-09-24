@@ -60,6 +60,7 @@ Capa que une la interfaz con los algoritmos. `solve(estado, algoritmo)` ejecuta 
 
 ### `gui.py`
 Interfaz gráfica hecha con Tkinter y Pillow. Se encarga de:
+
 - Cargar `resources/puzzle.jpg` y dividirlo en las 15 fichas.
 - Dibujar el tablero y mostrar los controles (tipo de búsqueda, algoritmo, velocidad de animación, nuevo puzzle, reiniciar, resolver).
 - Ejecutar el solver en un hilo aparte para no congelar la ventana.
@@ -67,6 +68,3 @@ Interfaz gráfica hecha con Tkinter y Pillow. Se encarga de:
 
 ### `benchmark.py`
 Script de consola para comparar los algoritmos. Genera varios tableros mezclados, los resuelve con cada algoritmo del tipo elegido y muestra el promedio de nodos expandidos, tiempo y movimientos. Acepta `--type`, `--trials` y `--scramble-moves`.
-
-### `__init__,py`
-Archivo vacío/placeholder con la coma en el nombre por error de escritura; no participa en la ejecución.
